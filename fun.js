@@ -35,6 +35,19 @@ $('.checkAnswer').click(function(){
    arrStore.push(answer);
 //    console.log(arrStore);
 });
+$('#submit').click(function(){
+    $('.displayScore').show();
+    $('#next,#submit,.ans,.que').hide();
+ for(let i=0;i<arrStore.length;i++){
+     if((main[i].ans)=== arrStore[i]){
+         score++;
+     }
+ }
+ console.log(score);
+ document.getElementById('score').innerHTML = score;
+});
+});
+
 
 
 
