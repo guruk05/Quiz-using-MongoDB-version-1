@@ -30,6 +30,11 @@ function getQues(main){
        }
 }
 // Store selected answer in array
+$('.checkAnswer').click(function(){
+   answer = $(this).text();
+   arrStore.push(answer);
+//    console.log(arrStore);
+});
 
 
 
