@@ -8,7 +8,7 @@ let main;
 // fetch data from mongodb database
 $(document).ready(function(){
    $.ajax({
-       url:'https://quiz-app-js.herokuapp.com/',
+       url:'https://quiz-mongodb-application.herokuapp.com/',
    }).done(function(data) {
        main = data;
        getQues(main);
@@ -72,7 +72,7 @@ $(".signupbtn").click(function() {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "https://quiz-app-js.herokuapp.com/",
+            url: "https://quiz-mongodb-application.herokuapp.com/",
             data:{
                 'username':usernameStore,
                 'password':passwordStore,
