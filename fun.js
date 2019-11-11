@@ -4,10 +4,11 @@ let arrStore=[];
 let correctAns;
 let answer;
 let main;
+
 // fetch data from mongodb database
 $(document).ready(function(){
    $.ajax({
-       url:'http://localhost:8100/api',
+       url:'https://quiz-app-js.herokuapp.com/',
    }).done(function(data) {
        main = data;
        getQues(main);
@@ -48,27 +49,41 @@ $('#submit').click(function(){
 });
 });
 
+ let usernameStore;
+ let passwordStore;
 // store email into mongodb database
-$(".topic_submit").click(function() {  
-    var emailStore = $("#mail").val();
-    console.log("here");
-    $.ajax({
-        type: "POST",
-        dataType: "text",
-        url: "http://localhost:8100/",
-        data:{
-            'email': emailStore
-        },
-        success: function(data){
-           result=data;
-           console.log(result);
-           getQues();
-           console.log(result[0].question);
-        },
-        error:function(err){
-            console.log(err);
-        }
-    });
+$(".signupbtn").click(function() {  
+    usernameStore = $(".authusername").val();
+    // let validateName = /[A-Za-z0-9_]+/;
+    passwordStore = $(".authpassword").val();
+    let strongRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20}/;
+    confirmPassword = $('.authconfirmpassword').val();
+    console.log(usernameStore);
+    if(!(passwordStore.match(strongRegex))){
+        alert("Password should contains symbol, letter and number");
+    }
+    else if(usernameStore=="" || passwordStore==""){
+        alert("All fields are required");
+    }
+    else if(!(passwordStore==confirmPassword)){
+        alert("confirm password is wrong");
+    }
+    else{
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "https://quiz-app-js.herokuapp.com/",
+            data:{
+                'username':usernameStore,
+                'password':passwordStore,
+            },
+            success: 
+                window.location="quiz.html"
+        });
+    }
 });
+$('.loginbtn').click(function(){
 
+    window.location="quiz.html";
+})
 

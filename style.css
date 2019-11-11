@@ -27,8 +27,6 @@
     border-radius: 30px;
  }
  .rect-2{
-    /* text-align: center; */
-    /* display:flex; */
     height:96vh;
     width: 97vw;
     justify-content: center;
@@ -62,6 +60,22 @@
     align-items: center;
     
  }
+ .username,.password{
+    height: 10vh;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+ }
+ .signup{
+   height:8vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ }
+ .authusername,.authpassword,.authconfirmpassword{
+    border-radius: 10px;
+    border-color: var(--color-1);
+ }
  #mail{
     border-radius: 13px;
     border-color: var(--color-2);
@@ -82,6 +96,17 @@
     align-items: center;
    justify-content: center;
    display:flex; 
+ }
+ .login{
+    height: 10vh;
+    align-items: center;
+   justify-content: center;
+   display:flex; 
+ }
+ .loginbtn,.signupbtn{
+    width:300px;
+    height: 50px;
+    font-size: 30;
  }
  .startBtn{
    width: 170px;
@@ -138,33 +163,30 @@
      margin-top: 7px;  
  }
  .checkAnswer:hover{
-    background-color:var(--color-2);
+    background-color:var(--color-1);
     color: var(--color-3);
  }
 
  .next-previous{
-    margin:1vw;
-    height:25vh;
-    padding: 5vw;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- .next{
-    background-color: var(--color-2);
-    height:4vh;
-    width:50vw;
-    cursor: pointer;
-    font-family: sans-serif;
- }
- .submit{
-    background-color: var(--color-6);
-    height:4vh;
-    width: 40vw;
-    color: var(--color-3);
-    font-family: sans-serif;
- }
+   margin:1vw;
+   height:10vh;
+   padding: 3vw;
+   cursor: pointer;
+}
+.next{
+   background-color: var(--color-2);
+   height:4vh;
+   width:50vw;
+   cursor: pointer;
+   font-family: sans-serif;
+}
+.submit{
+   background-color: var(--color-6);
+   height:4vh;
+   width: 40vw;
+   color: var(--color-3);
+   font-family: sans-serif;
+}
  .score,.greet,.emoji{
     display: flex;
     justify-content: center;
