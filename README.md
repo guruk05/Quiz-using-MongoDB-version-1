@@ -13,3 +13,4 @@ This repository shows multiple choice questions, user can select one option and 
 
 ![sceenshot](Quiz.png)
 ### Preview
+https://compassionate-booth-9ac5db.netlify.com/
