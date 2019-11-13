@@ -11,6 +11,6 @@ This repository shows multiple choice questions, user can select one option and 
 * MongoDB, NodeJS, ExpressJS
 ## Design
 
-![sceenshot](Quiz.png)
+![sceenshot](./images/Quiz.png)
 ### Preview
-https://compassionate-booth-9ac5db.netlify.com/
+https://awesome-shockley-5dbe6f.netlify.com
