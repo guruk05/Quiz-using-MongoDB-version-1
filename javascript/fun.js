@@ -45,7 +45,7 @@ $('#submit').click(function(){
      }
  }
  console.log(score);
- document.getElementById('score').innerHTML = score;
+ $('#score').text(score);
 });
 });
 
@@ -83,7 +83,16 @@ $(".signupbtn").click(function() {
     }
 });
 $('.loginbtn').click(function(){
-
-    window.location="quiz.html";
-})
+    usernameStore = $(".authusername").val();
+    // let validateName = /[A-Za-z0-9_]+/;
+    passwordStore = $(".authpassword").val();
+    let strongRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20}/;
+    confirmPassword = $('.authconfirmpassword').val();
+    if(usernameStore=="" || passwordStore==""){
+        alert("All fields are required");
+    }
+    else{
+        window.location="quiz.html";
+    }
+});
 
