@@ -1,0 +1,27 @@
+{
+  "name": "quiz-using-mongodb",
+  "version": "1.0.0",
+  "description": "Quiz-Application-Using-MongoDB\r ## Author name\r Pratiksha, Guru\r ## Details\r This repository shows multiple choice questions, user can select one option and go to next question using next button. All data is stored into the mongodb database. If you want end quiz then click on submit button and it displays score. User can again play quiz click on unique title.\r ## Technology\r * HTML\r * CSS\r * JavaScript\r * MongoDB, NodeJS, ExpressJS\r ## Design",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pratikshatippe/Quiz-using-MongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pratikshatippe/Quiz-using-MongoDB/issues"
+  },
+  "homepage": "https://github.com/Pratikshatippe/Quiz-using-MongoDB#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.3",
+    "nodemon": "^1.19.4"
+  }
+}
