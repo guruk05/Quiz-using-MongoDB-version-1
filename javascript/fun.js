@@ -12,7 +12,7 @@ $(document).ready(function(){
    }).done(function(data) {
        main = data;
        getQues(main);
-       $('#next').click(function(){
+       $('#next').click(function(){ 
            getQues(main);
        }); 
 })
