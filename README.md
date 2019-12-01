@@ -1,5 +1,5 @@
 # Application Name
-Quiz-Application-Using-MongoDB
+### Quiz-Application-Using-MongoDB
 
 This Repo contains a Quiz Application which allows users to participate in Quiz and shows the result post submission. This App is developed during the learning process of Node Js, MongoDb and Express Js. Hosted in Heroku and Netlify.
 
