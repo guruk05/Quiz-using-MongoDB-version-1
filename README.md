@@ -17,8 +17,10 @@ The App shows multiple choice questions, user can select one option and go to ne
 
 ![sceenshot](./images/Quiz.png)
 
-## Authors
-Pratiksha, Guru
+ ## Authors: 
+
+ * #### <a href="https://github.com/guruk05">Guru Prasath</a>
+ * #### <a href="https://github.com/Pratikshatippe">Pratiksha Tippe</a> 
 
 ### Preview
 
